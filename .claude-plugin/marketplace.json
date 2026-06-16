@@ -10,7 +10,7 @@
     {
       "name": "spec-generator",
       "version": "0.1.0",
-      "displayName": "Spec Generator",
+      "displayName": "spec-generator",
       "description": "Generate API specification files with auto-numbered specs, structured task directories, and git integration",
       "category": "Documentation",
       "author": {
