@@ -1,42 +1,27 @@
 {
   "name": "Singam-Tech-Inc",
+  "version": "1.0.0",
+  "description": "Official plugins from Singam Tech Inc",
   "owner": {
     "name": "Singam Tech Inc",
     "url": "https://github.com/Singam-Tech-Inc"
   },
   "plugins": [
     {
+      "id": "spec-generator",
       "name": "spec-generator",
       "version": "0.1.0",
+      "displayName": "Spec Generator",
       "description": "Generate API specification files with auto-numbered specs, structured task directories, and git integration",
       "category": "Documentation",
-      "tags": ["api", "specifications", "documentation", "automation", "git"],
-      "author": {
-        "name": "Vairam",
-        "email": "vairam.svs@outlook.com"
+      "author": "Vairam <vairam.svs@outlook.com>",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Singam-Tech-Inc/spec-generator.git"
       },
-      "repository": "https://github.com/Singam-Tech-Inc/spec-generator",
       "homepage": "https://github.com/Singam-Tech-Inc/spec-generator",
       "license": "MIT",
-      "keywords": [
-        "api-spec",
-        "documentation",
-        "automation",
-        "workflow"
-      ],
-      "features": [
-        "Auto-numbered API specifications (SPEC-NNNNN)",
-        "Structured task directories with story points",
-        "Git branch and commit integration",
-        "Customizable templates (default + project-defined)",
-        "Jekyll YAML frontmatter support"
-      ],
-      "source": {
-        "type": "github",
-        "owner": "Singam-Tech-Inc",
-        "repo": "spec-generator",
-        "url": "https://github.com/Singam-Tech-Inc/spec-generator"
-      }
+      "keywords": ["api", "spec", "documentation", "automation"]
     }
   ]
 }
