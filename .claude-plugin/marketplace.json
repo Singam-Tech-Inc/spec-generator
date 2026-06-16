@@ -15,9 +15,9 @@
       "description": "Generate API specification files with auto-numbered specs, structured task directories, and git integration",
       "category": "Documentation",
       "author": "Vairam <vairam.svs@outlook.com>",
-      "repository": {
-        "type": "git",
-        "url": "https://github.com/Singam-Tech-Inc/spec-generator.git"
+      "source": {
+        "source": "github",
+        "repo": "Singam-Tech-Inc/spec-generator"
       },
       "homepage": "https://github.com/Singam-Tech-Inc/spec-generator",
       "license": "MIT",
