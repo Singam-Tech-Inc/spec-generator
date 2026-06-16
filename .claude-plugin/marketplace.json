@@ -31,8 +31,10 @@
         "Customizable templates (default + project-defined)",
         "Jekyll YAML frontmatter support"
       ],
-      "installation": {
-        "type": "git",
+      "source": {
+        "type": "github",
+        "owner": "Singam-Tech-Inc",
+        "repo": "spec-generator",
         "url": "https://github.com/Singam-Tech-Inc/spec-generator"
       }
     }
