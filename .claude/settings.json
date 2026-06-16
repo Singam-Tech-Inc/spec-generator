@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "singam-tech-inc": {
+      "source": {
+        "source": "github",
+        "repo": "Singam-Tech-Inc/spec-generator"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "spec-generator@singam-tech-inc": true
+  }
+}
