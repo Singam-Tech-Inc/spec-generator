@@ -98,14 +98,13 @@ Create git branch and request final confirmation:
 
 ```
 spec/
-└── SPEC-NNNNN-shorttitle/
-    ├── SPEC-NNNNN-shorttitle.md       # Main specification file
-    └── taskfiles/
-        ├── 01-subfeature-oauth.md     # Auto-generated subtasks
-        ├── 02-subfeature-rate-limit.md
-        ├── 03-test-plan.md
-        ├── 04-implementation.md
-        └── 05-documentation.md
+├── SPEC-NNNNN-shorttitle.md           # Main specification file
+└── SPEC-NNNNN/
+    ├── 01-subfeature-oauth.md         # Auto-generated subtasks
+    ├── 02-subfeature-rate-limit.md
+    ├── 03-test-plan.md
+    ├── 04-implementation.md
+    └── 05-documentation.md
 ```
 
 Each taskfile uses Jekyll frontmatter:

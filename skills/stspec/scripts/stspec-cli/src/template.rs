@@ -95,12 +95,17 @@ impl TemplateRenderer {
     fn get_default_template() -> String {
         // Return a minimal default template
         // In production, this would be the full template from references/default-template.md
-        r#"# {{ SPEC_TITLE }}
+        r#"---
+layout: default
+title: "{{ SPEC_TITLE }}"
+spec_id: "{{ SPEC_ID }}"
+version: "1.0.0"
+description: "{{ SPEC_DESCRIPTION }}"
+created_date: "{{ CREATED_DATE }}"
+status: draft
+---
 
-**Specification ID**: {{ SPEC_ID }}
-**Version**: 1.0.0
-**Created**: {{ CREATED_DATE }}
-**Status**: Draft
+# {{ SPEC_TITLE }}
 
 ## Overview
 

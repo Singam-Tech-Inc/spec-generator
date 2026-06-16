@@ -43,19 +43,19 @@ impl SpecGenerator {
         // Sanitize title
         let sanitized_title = sanitize_title(&self.config.title);
 
-        // Create spec directory
+        // Create spec directory structure
         let spec_dir_name = format!("SPEC-{:05}-{}", spec_number, sanitized_title);
-        let spec_dir = self.config.project_root.join("spec").join(&spec_dir_name);
-        let taskfiles_dir = spec_dir.join("taskfiles");
+        let spec_base_dir = self.config.project_root.join("spec");
+        let taskfiles_dir = spec_base_dir.join(format!("SPEC-{:05}", spec_number));
 
         if !self.config.dry_run {
             fs::create_dir_all(&taskfiles_dir)
-                .context(format!("Failed to create spec directory at {}", spec_dir.display()))?;
+                .context(format!("Failed to create taskfiles directory at {}", taskfiles_dir.display()))?;
         }
 
-        // Create spec file
+        // Create spec file directly in spec/ directory
         let spec_filename = format!("{}.md", spec_dir_name);
-        let spec_file_path = spec_dir.join(&spec_filename);
+        let spec_file_path = spec_base_dir.join(&spec_filename);
 
         let renderer = TemplateRenderer::new(&self.config)?;
         let spec_content = renderer.render_spec(
@@ -79,7 +79,10 @@ impl SpecGenerator {
 
         if !self.config.dry_run {
             git_manager.create_branch(&git_branch)?;
-            git_manager.stage_changes(&spec_dir)?;
+            // Stage the spec file
+            git_manager.stage_changes(&spec_file_path)?;
+            // Stage the taskfiles directory
+            git_manager.stage_changes(&taskfiles_dir)?;
         }
 
         Ok(SpecInfo {
