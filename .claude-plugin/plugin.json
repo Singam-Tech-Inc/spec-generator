@@ -1,0 +1,11 @@
+{
+  "name": "spec-generator",
+  "version": "0.1.0",
+  "description": "Generate API specification files with auto-numbered specs, structured task directories, and git integration",
+  "author": {
+    "name": "Vairam",
+    "email": "vairam.svs@outlook.com"
+  },
+  "keywords": ["api", "specifications", "documentation", "automation"],
+  "homepage": "https://github.com/user/spec-generator"
+}

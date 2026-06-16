@@ -1,0 +1,24 @@
+[package]
+name = "stspec-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["Vairam <vairam.svs@outlook.com>"]
+description = "CLI tool for generating API specifications with auto-numbering, templating, and git integration"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+regex = "1.10"
+walkdir = "2.4"
+chrono = "0.4"
+handlebars = "5.0"
+git2 = "0.18"
+anyhow = "1.0"
+thiserror = "1.0"
+serde_yaml = "0.9"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
