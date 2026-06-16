@@ -1,39 +1,39 @@
 {
-  "name": "spec-generator",
-  "version": "0.1.0",
-  "description": "Generate API specification files with auto-numbered specs, structured task directories, and git integration",
-  "category": "Documentation",
-  "tags": ["api", "specifications", "documentation", "automation", "git"],
-  "author": {
-    "name": "Vairam",
-    "email": "vairam.svs@outlook.com"
+  "owner": {
+    "name": "Singam Tech Inc",
+    "url": "https://github.com/Singam-Tech-Inc"
   },
-  "repository": "https://github.com/user/spec-generator",
-  "homepage": "https://github.com/user/spec-generator",
-  "license": "MIT",
-  "keywords": [
-    "api-spec",
-    "documentation",
-    "automation",
-    "workflow"
-  ],
-  "compatibility": {
-    "minVersion": "0.1.0",
-    "platforms": ["darwin", "linux", "win32"]
-  },
-  "features": [
-    "Auto-numbered API specifications (SPEC-NNNNN)",
-    "Structured task directories with story points",
-    "Git branch and commit integration",
-    "Customizable templates (default + project-defined)",
-    "Jekyll YAML frontmatter support"
-  ],
-  "installation": {
-    "type": "git",
-    "url": "https://github.com/user/spec-generator"
-  },
-  "preview": {
-    "image": "https://github.com/user/spec-generator/blob/main/preview.png",
-    "description": "Generate and manage API specifications with automatic versioning"
-  }
+  "plugins": [
+    {
+      "name": "spec-generator",
+      "version": "0.1.0",
+      "description": "Generate API specification files with auto-numbered specs, structured task directories, and git integration",
+      "category": "Documentation",
+      "tags": ["api", "specifications", "documentation", "automation", "git"],
+      "author": {
+        "name": "Vairam",
+        "email": "vairam.svs@outlook.com"
+      },
+      "repository": "https://github.com/Singam-Tech-Inc/spec-generator",
+      "homepage": "https://github.com/Singam-Tech-Inc/spec-generator",
+      "license": "MIT",
+      "keywords": [
+        "api-spec",
+        "documentation",
+        "automation",
+        "workflow"
+      ],
+      "features": [
+        "Auto-numbered API specifications (SPEC-NNNNN)",
+        "Structured task directories with story points",
+        "Git branch and commit integration",
+        "Customizable templates (default + project-defined)",
+        "Jekyll YAML frontmatter support"
+      ],
+      "installation": {
+        "type": "git",
+        "url": "https://github.com/Singam-Tech-Inc/spec-generator"
+      }
+    }
+  ]
 }
