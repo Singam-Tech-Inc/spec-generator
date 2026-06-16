@@ -1,5 +1,5 @@
 {
-  "name": "Singam-Tech-Inc",
+  "name": "singam-tech-inc",
   "version": "1.0.0",
   "description": "Official plugins from Singam Tech Inc",
   "owner": {
@@ -8,17 +8,16 @@
   },
   "plugins": [
     {
-      "id": "spec-generator",
       "name": "spec-generator",
       "version": "0.1.0",
       "displayName": "Spec Generator",
       "description": "Generate API specification files with auto-numbered specs, structured task directories, and git integration",
       "category": "Documentation",
-      "author": "Vairam <vairam.svs@outlook.com>",
-      "source": {
-        "source": "github",
-        "repo": "Singam-Tech-Inc/spec-generator"
+      "author": {
+        "name": "singamtech",
+        "email": "noreply@singamtech.com"
       },
+      "source": "./",
       "homepage": "https://github.com/Singam-Tech-Inc/spec-generator",
       "license": "MIT",
       "keywords": ["api", "spec", "documentation", "automation"]

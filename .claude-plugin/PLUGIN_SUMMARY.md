@@ -159,7 +159,7 @@ If publishing to Claude Code marketplace:
   "category": "Documentation",
   "tags": ["api", "specifications", "documentation", "automation"],
   "description": "Automatically generate versioned API specifications with structured task directories and git integration",
-  "author": "Vairam",
+  "author": "singamtech",
   "version": "0.1.0",
   "homepage": "https://github.com/user/spec-generator",
   "preview_image": "https://..."
@@ -242,7 +242,7 @@ If publishing to Claude Code marketplace:
 
 ## Contact & Support
 
-- **Author**: Vairam (vairam.svs@outlook.com)
+- **Author**: singamtech (noreply@singamtech.com)
 - **Repository**: [GitHub link]
 - **Issues**: Report via GitHub issues
 - **Discussions**: [Discussion forum]

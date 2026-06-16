@@ -2,7 +2,7 @@
 name = "stspec-cli"
 version = "0.1.0"
 edition = "2021"
-authors = ["Vairam <vairam.svs@outlook.com>"]
+authors = ["singamtech <noreply@singamtech.com>"]
 description = "CLI tool for generating API specifications with auto-numbering, templating, and git integration"
 
 [dependencies]

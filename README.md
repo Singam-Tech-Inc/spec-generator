@@ -178,5 +178,5 @@ For issues, check the plugin logs or contact the author.
 ---
 
 **Plugin Version**: 0.1.0  
-**Author**: Vairam  
+**Author**: singamtech  
 **License**: MIT
