@@ -14,6 +14,11 @@ if [ ! -f "$PROJECT_DIR/Cargo.toml" ]; then
     exit 1
 fi
 
+# Source Rust environment
+if [ -f "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
+
 # Check if Rust is installed
 if ! command -v cargo &> /dev/null; then
     echo "❌ Error: Rust is not installed"
@@ -33,11 +38,11 @@ else
     BINARY_NAME="stspec"
 fi
 
-BINARY_PATH="$PROJECT_DIR/target/release/$BINARY_NAME"
+BINARY_PATH="$PROJECT_DIR/target/release/stspec-cli"
 
 if [ -f "$BINARY_PATH" ]; then
-    # Copy to scripts directory
-    cp "$BINARY_PATH" "$OUTPUT_DIR/$BINARY_NAME"
+    # Copy to scripts directory with renamed name
+    cp "$BINARY_PATH" "$OUTPUT_DIR/stspec"
     chmod +x "$OUTPUT_DIR/$BINARY_NAME"
 
     echo "✅ Build complete!"
