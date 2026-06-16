@@ -1,5 +1,5 @@
 ---
-name: Spec Generator
+name: spec-generator
 description: Use this skill to generate versioned API specifications with auto-numbered IDs, structured task breakdowns, and git integration. Triggered by queries like "create a spec", "generate spec", "/stspec:c", or "new API specification".
 version: 0.1.0
 ---
